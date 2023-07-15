@@ -3,8 +3,8 @@
 /**
  * main - entry point
  *
- * Return: 0 always Success
- */
+ * Return: 0 (Success)
+*/
 
 int main(void)
 {
@@ -16,10 +16,16 @@ int main(void)
 		{
 			putchar(dg1 + '0');
 			putchar(dg2 + '0');
+
+			if (dg1 == 8 && dg2 == 9)
+				continue;
+
 			putchar(',');
 			putchar(' ');
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
