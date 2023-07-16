@@ -31,8 +31,10 @@ int main(void)
 				}
 				k++;
 			}
+			k = '0';
 			j++;
 		}
+		j = '0';
 		i++;
 	}
 	putchar('\n');
