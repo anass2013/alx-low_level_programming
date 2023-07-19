@@ -24,7 +24,7 @@ int main(void)
 		Fb2 = Fb3;
 	}
 
-	printf("%ld\n", S);
+	printf("%.0f\n", S);
 
 	return (0);
 }
