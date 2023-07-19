@@ -8,21 +8,21 @@
 
 int main(void)
 {
-	int i;
-	unsigned long Fb1 = 1, Fb2 = 2, Fb3;
-	long S = 0;
+	unsigned long Fb1 = 0, Fb2 = 2, Fb3;
+	long S = Fb1 + Fb2;
 
-	while (Fb1 + Fb2 < 4000000)
+	while (Fb2 <= 4000000)
 	{
-		Fb3 = Fb1 + Fb2;
-		if (Fb3 % 2 == 0)
-		{
-			S = S + Fb3;
-			Fb1 = Fb2;
-			Fb2 = Fb3;
-			i++;
-		}
+		Fb3 = 4 * Fb2 + Fb1;
+		if (Fb3 > 4000000)
+			break;
+
+		S = S + Fb3;
+		Fb1 = Fb2;
+		Fb2 = Fb3;
+		S += Fb2;
 	}
+
 	printf("%ld\n", S);
 
 	return (0);
