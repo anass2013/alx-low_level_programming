@@ -17,4 +17,6 @@ int main(void)
 			S = S + i;
 	}
 	printf("%d\n", S);
+
+	return (0);
 }
