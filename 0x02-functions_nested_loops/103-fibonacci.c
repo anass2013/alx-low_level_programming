@@ -11,7 +11,7 @@ int main(void)
 	unsigned long Fb1 = 0, Fb2 = 1, Fb3;
 	long S;
 
-	while (Fb2 <= 4000000)
+	while (1)
 	{
 		Fb3 = Fb1 + Fb2;
 		if (Fb3 > 4000000)
