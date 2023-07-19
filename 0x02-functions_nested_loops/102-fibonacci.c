@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int Fb1 = 1, Fb2 = 2, i;
+	int Fb1 = 1, Fb2 = 2, Fb3, i;
 
 	printf("%d", Fb1);
 	printf(", %d", Fb2);
