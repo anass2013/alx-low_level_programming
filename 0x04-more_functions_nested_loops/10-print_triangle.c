@@ -26,10 +26,13 @@ void print_triangle(int size)
 			}
 
 			if (i == size)
+			{
 				continue;
+			}
 
 			_putchar('\n');
 		}
 	}
+
 	_putchar('\n');
 }
