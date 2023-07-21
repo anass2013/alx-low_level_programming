@@ -8,8 +8,7 @@
 
 void main(void)
 {
-	int i = 2, lp = 0;
-	long int n = 612852475143;
+	long int n = 612852475143, i = 2, lp = 0;
 
 	while ((i * i) <= n)
 	{
@@ -25,5 +24,5 @@ void main(void)
 	{
 		lp = n;
 	}
-	printf("%d", lp);
+	printf("%ld", lp);
 }
