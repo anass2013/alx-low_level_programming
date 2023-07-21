@@ -21,5 +21,5 @@ int main(void)
 	if (n > 1)
 		lp = n;
 
-	return (lp);
+	printf("%ld", lp);
 }
