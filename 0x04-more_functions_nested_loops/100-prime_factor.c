@@ -22,4 +22,6 @@ int main(void)
 		lp = n;
 
 	printf("%ld", lp);
+
+	return (0);
 }
