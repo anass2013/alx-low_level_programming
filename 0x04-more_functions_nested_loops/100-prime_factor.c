@@ -20,9 +20,5 @@ void main(void)
 		i++;
 	}
 
-	if (n > 1)
-	{
-		lp = n;
-	}
 	printf("%ld", lp);
 }
