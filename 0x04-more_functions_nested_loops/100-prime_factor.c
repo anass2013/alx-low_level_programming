@@ -8,20 +8,24 @@
 
 int main(void)
 {
-	long i = 2, lp = -1, n = 612852475143;
+	long n = 612852475143, i;
 
-	for (i = 2; i * i <= n; i++)
+	while (i < (n / 2))
 	{
-		if (n % i == 0)
+		if ((n % 2) == 0)
 		{
-			lp = i;
-			n = n / i;
+			n /= 2;
+			continue;
+		}
+
+		for (i = 3; i < (n / 2); i += 2)
+		{
+			if ((i % 2) == 0)
+				n /= i;
 		}
 	}
-	if (n > 1)
-		lp = n;
 
-	printf("%ld", lp);
+	printf("%ld\n", n);
 
 	return (0);
 }
