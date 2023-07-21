@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long i = 2, lp = 0, n = 612852475143;
+	long i = 2, lp = -1, n = 612852475143;
 
 	for (i = 2; i * i <= n; i++)
 	{
