@@ -4,6 +4,8 @@
  * print_triangle - a function that prints a triangle
  *
  * @size: size of triangle
+ *
+ * Return: 0 always (Success)
  */
 
 void print_triangle(int size)
@@ -16,7 +18,7 @@ void print_triangle(int size)
 	{
 		for (i = 1, i <= size; i++)
 		{
-			for (j = 1; j < size, j++)
+			for (j = 1; j <= size, j++)
 			{
 				if ((i + j) <= size)
 					_putchar(' ');
