@@ -8,22 +8,19 @@
 
 char *leet(char *c)
 {
-	char *cp = c;
-	char key[] = {'A', 'E', '0', 'T', 'L'};
-	int vl[] = {4, 3, 0, 7, 1};
-	unsigned int j;
+	int i, j;
+	char str1[] = "aAeEoOtTlL";
+	char str2[] = "4433007711";
 
-	while (*c)
+	for (i = 0; c[i] != '\0'; i++)
 	{
-		for (j = 0; j < sizeof(key) / sizeof(char); j++)
+		for (j = 0; j < 10; j++)
 		{
-			if (*c == key[j] || *c == key[j] + 32)
+			if (c[i] == str1[j])
 			{
-				*c = 48 + vl[j];
+				c[i] = str2[j];
 			}
 		}
-		c++;
 	}
-
-	return (cp);
+	return (c);
 }
