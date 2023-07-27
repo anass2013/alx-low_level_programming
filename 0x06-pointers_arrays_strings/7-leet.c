@@ -10,7 +10,7 @@ char *leet(char *str)
 {
 	char *sp = str;
 	char key[] = {'A', 'E', '0', 'T', 'L'};
-	int vl[] = {4, 3, 0, 7, 1}
+	int vl[] = {4, 3, 0, 7, 1};
 	unsigned int j;
 
 	while (*str)
