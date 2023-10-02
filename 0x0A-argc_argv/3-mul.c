@@ -10,17 +10,18 @@
 
 int main(int argc, char *argv[])
 {
-	int Product;
+	int product;
 
 	if (argc == 3)
 	{
 		product = atoi(argv[1]) * atoi(argv[2]);
-		prinf("%d\n", product);
+		printf("%d\n", product);
 	}
 	else
 	{
 		printf("Error\n");
 		return (1);
 	}
+
 	return (0);
 }
