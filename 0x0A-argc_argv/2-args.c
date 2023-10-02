@@ -11,10 +11,9 @@ int main(int argc, char const *argv[])
 {
 	int j = 0;
 
-	if (argc--)
+	for (j = 0, argc--, j++)
 	{
 		printf("%s\n", argv[j]);
-		j++;
 	}
 
 	return (0);
