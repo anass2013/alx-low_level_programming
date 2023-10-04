@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * _strlength - find length of a string
+ * _strlen - find length of a string
  * @s: string
  * Return: integer
  */
 
-int _strlength(char *s)
+int _strlen(char *s)
 {
-	int sz = 0;
+	int size = 0;
 
-	for (; s[sz] != '\0'; sz++)
+	for (; s[size] != '\0'; size++)
 	;
-	return (sz);
+	return (size);
 }
 
 /**
@@ -28,12 +28,12 @@ char *str_concat(char *s1, char *s2)
 	char *n;
 
 	if (s1 == NULL)
-		s1 = '\0';
+		s1 = "\0";
 	if (s2 == NULL)
-		s2 = '\0';
+		s2 = "\0";
 
-	i1 = _strlength(s1);
-	i2 = _strlength(s2);
+	i1 = _strlen(s1);
+	i2 = _strlen(s2);
 	n = malloc((i1 + i2) * sizeof(char) + 1);
 
 	if (n == 0)
