@@ -31,12 +31,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
-	m = malloc(sizeof(int) * nmemb);
+	c = malloc(sizeof(int) * nmemb);
 
-	if (m == 0)
+	if (c == 0)
 		return (NULL);
 
-	_setfill(m, 0, sizeof(int) * nmemb);
+	_setfill(c, 0, sizeof(int) * nmemb);
 
-	return (m);
+	return (c);
 }
