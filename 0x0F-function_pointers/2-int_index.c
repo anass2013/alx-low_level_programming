@@ -13,7 +13,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 	int j = 0;
 
-	if (array && sizez && cmp)
+	if (array && size && cmp)
 		while (j < size)
 		{
 			if (cmp(array[j]))
